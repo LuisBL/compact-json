@@ -34,9 +34,9 @@ def command_line_parser():
         "-l",
         metavar="N",
         type=int,
-        default=50,
+        default=88,
         help="Limit inline elements to N chars, excluding "
-        "indentation and leading property names (default=50)",
+        "indentation and leading property names (default=88)",
     )
     parser.add_argument(
         "--max-inline-complexity",
@@ -59,8 +59,8 @@ def command_line_parser():
         help="If nested padding, add spaces inside outside brackes for nested lists/dicts",
     )
     parser.add_argument(
-        "--indent", "-i", metavar="N", type=int, default=4,
-        help="Indent N spaces (default=4)"
+        "--indent", "-i", metavar="N", type=int, default=2,
+        help="Indent N spaces (default=2)"
     )
     parser.add_argument(
         "--tab-indent", default=False, action="store_true", help="Use tabs to indent"
